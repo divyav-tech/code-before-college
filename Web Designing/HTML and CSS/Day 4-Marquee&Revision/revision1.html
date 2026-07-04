@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML Revision</title>
+</head>
+
+<body bgcolor="lightblue">
+    <!--Marquee (Scrolling Text)-->
+    <marquee behavior="scroll" direction="left" bgcolor="pink">
+        <h2>
+            <font face="Consolas" color="purple">Welcome to HTML Revision Program!
+        </h2>
+        </font>
+    </marquee>
+
+    <!--logo image-->
+    <div>
+        <img src="2.png" alt="my logo" width="150">
+    </div>
+
+    <h1>HTML Revision Program</h1>
+
+    <!--Navigation Links-->
+    <h2>
+        <font face="cooper" color="red">Useful Links
+    </h2>
+    <ul>
+        <li><a href="https://www.google.com" target="_blank">Google</a></li>
+        <li><a href="https://www.wikipedia.org" target="_blank">Wikipedia</a></li>
+        <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+    </ul>
+    </font>
+
+    <!--Ordered and Unordered Lists-->
+    <h2>
+        <font face="Broadway" color="brown">Topics Covered
+    </h2>
+    <ul>
+        <li>HTML Basics</li>
+        <li>Tables</li>
+        <li>Form</li>
+        <li>Lists</li>
+        <li>Link and Images</li>
+    </ul>
+
+    <h2>Upcoming Topics</h2>
+    <ol>
+        <li>CSS Basics</li>
+        <li>
+            CSS Grid and Flexbox
+        </li>
+        <li>
+            Responsive Web Design
+        </li>
+    </ol>
+    </font>
+
+    <!--Student Table-->
+    <h2>
+        <font face="cooper">
+            Student Information
+    </h2>
+    </font>
+    <table border="5" Width="60%" color="brown">
+        <tr>
+            <th colspan="3">Student Details</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Sameer</td>
+            <td rowspan="2">25</td>
+            <td>Web Designing</td>
+        </tr>
+
+        <tr>
+            <td>Graphic Designing</td>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td>22</td>
+            <td>Tally</td>
+        </tr>
+        <tr>
+            <td>Hassan</td>
+            <td>23</td>
+            <td>Advance Excel</td>
+        </tr>
+        <tr>
+            <td>Sara</td>
+            <td>21</td>
+            <td>Basic Computer</td>
+        </tr>
+        <tr>
+            <td Colspan="2">Total Students</td>
+            <td>10</td>
+        </tr>
+        </font>
+    </table>
+
+    <!--Student registration form-->
+    <center>
+        <h2>Student Registration Form</h2>
+
+        <form action="" mthod="post">
+            <font face="Corabael" color="brown">
+                <label for="name">Name:</label>
+                <input type="text id=name" name="name" required><br><br>
+
+                <label for="email"> Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="">Gender:</label>
+                <input type="radio" name="male" value="male">Male
+                <input type="radio" name="female" value="male">Female
+                <input type="radio" name="other" value="other">Other <br>
+                <br>
+
+                <label for="">Select Course:</label>
+                <select name="course" id="">
+                    <option value="web">Web Designing</option>
+                    <option value="graphic">Graphic Designing</option>
+                    <option value="tally">Tally</option>
+                    <option value="excel"> Advanced Excel</option>
+                    <option value="basic">Basic Computer</option>
+                </select><br><br>
+
+                <label for="">Hobbies:</label>
+                <input type="checkbox" name="hobby" value="reading">Reading
+                <input type="checkbox" name="hobby" value="music">Music
+                <input type="checkbox" name="hobby" value="sports">Sports <br><br>
+
+                <input type="submit" value="register">
+            </font>
+    </center>
+
+    </form>
+
+    <!--Audio and Video-->
+    <h2>Learn with Audio and Video</h2>
+
+    <h3>Sample Audio</h3>
+    <audio controls>
+        <source src="audio2.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio><br>
+
+    <h3>Sample Video</h3>
+    <video controls width="400">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+
+</html>

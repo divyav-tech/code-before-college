@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+
+<body bgcolor="lightblue"> <font face="cooper" color="purple">
+    <center><H1>REGISTRATION FORM</H1></center>
+    <form action="" taget="_blank" autocomplete="on">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Enter First Name" required> <br><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname" placeholder="Enter Last Name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="6" maxlength="12" required> <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"><br><br>
+
+            <label for="">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other"> Other</label><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10 digit number"><br><br>
+
+             <label for="profile">Upload Photo:</label>
+             <input type="file" id="profile" name="profile"><br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Address</legend>
+
+            <label for="address"> Address:</label><br>
+            <textarea name="address" id="address" rows="4" cols="50" placeholder="Enter Full Address"></textarea><br><br>
+
+            <label for="state">State:</label>
+            <select name="state" id="state">
+                <option value="">Select State</option>
+                <option value="UP">Uttar Pradesh</option>
+                <option value="MH">Maharashtra</option>
+                <option value="DL">Delhi</option>
+                <option value="GJ">Gujrat</option>
+                <option value="MP">Madhya Pradesh</option>
+                <option value="">Rajasthan</option>
+                <option value="">Punjab</option>
+            </select><br><br>
+
+            <label for="pin">Pin Code:</label>
+            <input type="number" id="pin" name="pincode"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <label for="">Languages Known:</label><br>
+            <input type="checkbox" id="hindi" name="language" value="Hindi">
+            <label for="hindi">Hindi</label>
+
+            <input type="checkbox" id="english" name="language" value="English">
+            <label for="english">English</label>
+
+            <input type="checkbox" id="french" name="language" value="French">
+            <label for="french">French</label>
+
+            <input type="checkbox" id="spanish" name="language" value="Spanish">
+            <label for="spanish">Spanish</label>
+
+            <input type="checkbox" id="otherlag" name="language" value="Other">
+            <label for="otherlag">Other</label><br><br>
+    
+            <label for="about">About Yourself:</label><br>
+            <textarea name="about" id="about" rows="5" cols="50"></textarea><br><br>
+
+            <label for="website">Your Website</label>
+            <input type="url" id="website" name="website" placeholder="https://example.com"><br><br>
+
+            <label for="color">Favourite Color:</label>
+            <input type="color" id="color" name="favcolor"><br><br>
+
+            <label for="range">Rate our Website (1-10):</label>
+            <input type="range" id="range" name="rating" min="1" max="10"><br><br>
+           </fieldset>
+
+           <input type="submit" value="Submit Form">
+           <input type="reset" value="Resest Form">
+           </font>
+    </form>
+
+</body>
+
+</html>

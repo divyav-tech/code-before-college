@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Institute Page</title>
+    <!--META TAGS-->
+    <meta name="description" content="Best Computer Institute">
+    <meta name="keywords" content="HTML,CSS,COURSE">
+    <meta name="author" ontent="Aamir">
+</head>
+
+<body bgcolor="lightblue">
+    <!--HEADER-->
+    <header>
+        <font face="cooper" color="purple">
+            <h1 align="center">ABC Institute</h1>
+        </font>
+        <font face="broadway" color="blue">
+            <marquee behavior="scroll" direction="right">
+                <p align="center" bgcolor="pink"><strong>Learn Skills For Future</strong></p>
+            </marquee>
+        </font>
+    </header>
+    <hr>
+    <!--NAVBAR-->
+    <nav align="center">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#courses">COURSES</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#video">VIDEO</a>
+        <a href="#table">STUDENTS</a>
+        <a href="#form">REGISTER</a>
+    </nav>
+    <hr>
+    <!--HOME-->
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>
+            <font color="purple" face="forte" size="5">
+                Welcome to ABC Institute. We provide quality education in IT and non-IT courses.
+                Our goal is to make students job ready with practical knowledge.
+        </p>
+        </font>
+        <br>
+        <img src="robot-working-with-computer.jpg" alt="" width="400">
+    </section>
+    <hr>
+
+    <!--About-->
+    <section id="about">
+        <h2>About Us</h2>
+        <div>
+            <p>
+                <font color="purple" face="forte" size="5">
+                    ABC Institute was establish in <mark>2012</mark> .
+                    We have trained more than <strong>20,000 students</strong>.
+            </p>
+            </font>
+        </div>
+        <h3>Our Mission</h3>
+        <font color="purple" face="forte" size="5">
+            <p><em>To make students job ready.</em></p>
+        </font>
+    </section>
+    <hr>
+
+    <!--COURSES-->
+    <section id="courses">
+        <h2>Courses</h2>
+        <ul>
+            <font color="purple" face="forte" size="5">
+                <li>Web Designing</li>
+                <li>Graphic Designing</li>
+                <li>Tally</li>
+            </font>
+        </ul>
+        <h3>Course Hignlights</h3>
+        <ul>
+            <font color="purple" face="forte" size="5">
+                <li>100% Practical Training</li>
+                <li>Experienced Faculty</li>
+                <li>Live Projects</li>
+        </ul>
+        </font>
+    </section>
+    <hr>
+
+    <!--GALLERY-->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <img src="3.jpg" alt="">
+        <img src="1.jpg" alt="">
+        <img src="2.png" alt="">
+    </section>
+    <hr>
+
+    <!--VIDEO-->
+    <section id="video">
+        <h2>Our Demo Video</h2>
+
+        <video width="300" controls>
+            <source src="video2.mp4">
+        </video>
+
+        <h3>Youtube video</h3>
+        <iframe src="https://youtu.be/kJzY65b3wWw?list=RDkJzY65b3wWw" frameborder="0" height="200" width="300"></iframe>
+    </section>
+    <hr>
+
+    <!--TABLE-->
+    <section id="table">
+        <h2>Student Data</h2>
+        <table border="2" cellpadding="10" cellspacing="5">
+            <caption>Student Marks</caption>
+            <tr>
+                <th rowspan="2">ID</th>
+                <th rowspan="2">Name</th>
+                <th colspan="3">Marks</th>
+            </tr>
+            <tr>
+                <th>HTML</th>
+                <th>CSS</th>
+                <th>JS</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Rahul Kumar</td>
+                <td>80</td>
+                <td>75</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Vishal</td>
+                <td>80</td>
+                <td>75</td>
+                <td>70</td>
+            </tr>
+        </table>
+    </section>
+    <hr>
+    <!--FORM-->
+    <section id="form">
+        <h2>Registration Form</h2>
+        <form action="">
+            <fieldset>
+                <legend>Personal Info</legend>
+                <label for="">Name:</label><br>
+                <input type="text" placeholder="Enter your name"><br><br>
+
+                <label for="">Email:</label><br>
+                <input type="email" placeholder="Enter your Email"><br><br>
+
+                <label for="">Password:</label><br>
+                <input type="password"><br><br>
+
+                <label for="">DOB:</label><br>
+                <input type="date"><br><br>
+
+                <label for="">Gender:</label><br>
+                <input type="radio" name="g">Male
+                <input type="radio" name="g">Female <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Course Info</legend>
+                <label for="">Course:</label> <br>
+                <select name="" id="">
+                    <option value="">Web Designing</option>
+                    <option value="">Tally</option>
+                    <option value="">Graphic Designing</option>
+                </select><br><br>
+
+                <label for="">Skills:</label><br>
+                <input type="checkbox">HTML
+                <input type="checkbox">CSS <br><br>
+
+                <label for="">Message:</label><br>
+                <textarea name="" id="" rows="4" cols="30" placeholder="Give us your feedback."></textarea><br><br>
+            </fieldset>
+            <button>Submit</button>
+
+        </form>
+    </section>
+    <hr>
+
+    <!--FOOTER-->
+    <footer align="center">
+        <p>2025 Vidya Institute</p>
+    </footer>
+</body>
+
+</html>

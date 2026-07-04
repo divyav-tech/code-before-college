@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+    padding: 0p;
+
+    body {
+        background-color: rgb(76, 221, 173);
+    }
+
+    h1 {
+        color: blueviolet;
+        text-align: center;
+    }
+
+    p {
+        color: darkgreen;
+        text-align: center;
+        font-size: large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    h2 {
+        color: rgb(88, 3, 20);
+        text-align: center;
+    }
+
+    h3 {
+        color: darkmagenta;
+        font-family: sans-serif;
+    }
+
+    marquee {
+        background-color: darkseagreen;
+        color: rgb(38, 38, 102);
+        font-size: 30px;
+    }
+
+    div {
+        margin: 10px;
+        padding: 10;
+        border: 5px, solid rgb(141, 39, 39);
+        width: 100px;
+        height: 200px;
+
+    }
+
+    .practice {
+        color: brown;
+        font-family: cursive;
+
+    }
+
+    #first {
+        font-size: larger;
+        padding: 20px;
+    }
+
+    #second {
+        font-size: 25px;
+        margin: 20px;
+        text-align: end;
+    }
+
+    .divya {
+        color: darkmagenta;
+    }
+
+}
