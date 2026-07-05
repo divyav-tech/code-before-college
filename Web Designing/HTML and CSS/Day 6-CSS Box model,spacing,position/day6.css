@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(bluebg.jpg);
+    background-size: cover;
+}
+
+#courses ,#history ,#mission ,#welcome{
+    text-align: center;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px;
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    height: 250px;
+    width: 250px;
+    border: rgb(92, 34, 146) dashed;
+    
+}
+#navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-size: 20px;
+}
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#about{
+    float: right;
+}
+li a:hover{
+    background-color: #111;
+}
+h1{
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    text-decoration: underline;
+}
+footer{
+    position: absolute;
+    background-color: #333;
+    color: rgb(255,255,255);
+    bottom: 0;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+#welcome{
+    background-color: rgb(211, 179, 210);
+    
+}
+h3{
+    color: darkmagenta;
+}
+#mission{
+background-color:rgb(188, 204, 165) ;
+}
+#history{
+    background-color: rgb(146, 169, 211);
+}
+#courses{
+    background-color: rgb(147, 229, 229);
+   
+}
+.courses{
+         list-style-position: inside;
+    list-style-type:square;
+    }
+#one , #two,#three{
+    height: 100px;
+    width: 100px;
+    border: purple solid;
+    border-radius: 50%;
+    background-color: rgb(128, 128, 214);
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+   
+}
+
