@@ -1,0 +1,47 @@
+body {
+    background-color: bisque;
+}
+
+.container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 250px;
+    border: 5PX solid rgb(77, 19, 19);
+    background-image: url(lightbg.avif);
+    background-size: cover;
+    margin: 25px;
+
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(99, 24, 24);
+    margin: 20px;
+    color: beige;
+    padding: 20px;
+    border: 4px solid rgb(173, 122, 122);
+}
+
+
+.text {
+    color: beige;
+    background-color: rgb(80, 19, 19);
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    border: 4px solid rgb(173, 122, 122);
+    padding-left: 20px;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 75%;
+    margin-left: 150px;
+    border: 2px dashed brown;
+    background-color: rgb(218, 152, 126);
+}

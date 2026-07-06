@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(76,35,10);
+    margin: 50px;
+  
+}
+h1{
+    color: rgb(204,201,161);
+    text-align: center;
+    text-decoration: underline;
+}
+h1:hover{
+    color: rgb(161, 161, 84);
+}
+.flexbox{
+    display: flex;
+    height: 650px;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    background-color: rgb(240,255,206);
+    border: 2px solid rgb(204,201,161);
+    height: 600px;
+    width: 400px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 10px;
+
+}
+
+.image{
+   
+    border: 2px solid rgb(204,201,161);
+    border-radius: 20px;
+    height: 300px;
+    width: 350px;
+    margin: 10px 20px;
+    background-size: cover;
+}
+#main{
+     background-image: url(A.png);
+
+}
+#mission{
+    background-image: url(1.jpg);
+}
+#history{
+    background-image: url(3.jpg);
+}
+
+.capsules{
+    padding: 0px 10px 0px 20px;
+}
+
+.capsules span{
+    border: 2px solid rgb(204,201,161);
+    border-radius: 20px;
+    padding: 0px 20px 0px 20px;
+    background-color: rgb(165,43,63);
+    color: antiquewhite;
+}
+.content{
+    padding: 14px;
+}
+.content p{
+    font-size: 20px;
+    color: rgb(73, 9, 16);
+    text-align: center;
+}
+.content h2{
+    color: rgb(73, 9, 16);
+    text-align: center;
+    text-decoration:underline;
+}
+.button{
+    text-align: center;
+}
+.button button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color:  rgb(165,43,63);
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 20px;
+}
+button:hover{
+background-color: rgb(100, 6, 15);
+}
+
+
