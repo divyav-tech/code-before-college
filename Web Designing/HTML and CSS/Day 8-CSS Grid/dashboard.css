@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin-right: 20px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 3fr 0.5fr 2fr 2.5fr 2.5fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+/* Sidebar */
+aside {
+    min-height: 100vh;
+    grid-column: 1/2;
+    grid-row: 1/7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(253, 245, 253);
+}
+
+.logo-box {
+    height: 80px;
+}
+
+.logo {
+    color: purple;
+    font-size: 28px;
+    margin: 10px;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sidebar img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+.logo-box {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sidebar-list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    color: rgb(88, 87, 87);
+}
+
+.sidebar-list ul li {
+    margin: 30px 10px 30px 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sidebar-list ul li:hover {
+    color: purple;
+}
+
+.sidebar-upgrade-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(229, 218, 230);
+    height: 300px;
+    margin: 20px;
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.upgrade-image {
+    background: url(upgrade-img.jpg);
+    height: 80px;
+    width: 150px;
+    background-size: cover;
+    transform: scale(1.25);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.sidebar-upgrade-option p {
+    font-size: 12px;
+    color: gray;
+    margin: 5px;
+}
+
+.upgrade-btn {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* Dashboard Navbar */
+nav {
+    width: 100%;
+    grid-column: 2/6;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard {
+    width: 100%;
+    height: 100%;
+    background-color: #f9f3f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.dashboard ul {
+    list-style-type: none;
+}
+
+.dashboard-text {
+    color: black;
+    font-size: 22px;
+    font-weight: bolder;
+    padding: 0 5px;
+}
+
+.dashboard ul li span {
+    font-size: 10px;
+    padding: 5px;
+}
+
+.dashboard ul .day {
+    color: purple;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.dashboard ul li .date {
+    color: gray;
+}
+
+.dashboard .nav-list2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard .nav-list2 li {
+    margin: 20px;
+}
+
+.user {
+    height: 30px;
+    border-radius: 5px;
+}
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+    width: 100%;
+    grid-column: 2/6;
+    grid-row: 2/3;
+    border-left: 10px solid purple;
+    border-bottom: 10px solid purple;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(253, 245, 253);
+}
+
+.hero-section .greeting p {
+    padding: 5px;
+    margin: 5px;
+}
+
+.hero-section .greeting .greet-name {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.hero-image {
+    height: 150px;
+    margin: 10px;
+}
+
+/* Overview Section */
+.overview {
+    grid-column: 2/6;
+    grid-row: 3/4;
+    color: gray;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.overview-card {
+    border-radius: 10px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    color: white;
+    height: 85%;
+}
+
+.overview-card p {
+    margin: 8px;
+}
+
+.icon {
+    backdrop-filter: blur(20px);
+    background-color: rgb(212, 207, 207, 0.5);
+    font-size: 40px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.number {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.info-name {
+    font-size: 18px;
+}
+
+.card1 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background-color: #fbd669;
+}
+
+.card2 {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    background-color: #503f9d;
+}
+
+.card3 {
+    grid-column: 4/5;
+    grid-row: 4/5;
+    background-color: #ea6597;
+}
+
+.card4 {
+    grid-column: 5/6;
+    grid-row: 4/5;
+    background-color: #ccc1e8;
+}
+
+/* History Cards */
+.history-card1,
+.history-card2 {
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 140px;
+}
+
+.history-img {
+    height: 100px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.history-card1 {
+    grid-column: 2/6;
+    grid-row: 5/6;
+}
+
+.history-card2 {
+    grid-column: 2/6;
+    grid-row: 6/7;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content .title {
+    color: #493895;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.content .slides {
+    font-size: 20px;
+    font-weight: bold;
+}
