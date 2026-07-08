@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(rgb(235, 187, 235),rgb(202, 202, 247) );
+    font-family: sans-serif;
+}
+.container{
+    margin: 50px;
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(14, 93, 163, 0.65) 0 10px 15px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.container h1{
+    margin-bottom:10px;
+    font-size: 45px;
+}
+.heading p{
+    color: rgb(57, 56, 56);
+    font-size: 18px;
+}
+.plans{
+    box-shadow: rgba(79,78,78,0.3) 0px 10px 10px;
+    padding:10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.plans span{
+    padding:4px 8px;
+    margin: 5px;
+}
+.plans .monthly{
+    background: whitesmoke;
+    border-radius: 10px;
+}
+.card-container{
+    display: flex;
+    padding: 20px;
+}
+.card{
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(246, 239, 239, 0.35);
+    width: 400px;
+    line-height: 1.5;
+}
+.card p{
+    color: rgb(89, 87, 87);
+    font-size: 12px;
+}
+.card .offer-price{
+    font-size: 35px;
+    color: rgb(41, 41, 165);
+    font-weight: bolder;
+}
+.card .real-price{
+    font-size: 30px;
+    color: grey;
+    text-decoration: line-through;
+}
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    text-align: center;
+    box-shadow: rgba(72, 55, 55, 0.7) 0px 5px 10px;
+    margin: 10px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    font-size: 18px;
+}
+button:hover{
+    transform: scale(1.1);
+}
+.start-btn{
+    background-color: rgb(66, 66, 185);
+    color: white;
+}
+.card ul{
+    list-style-type: none;
+    line-height: 1.5;
+}
+.card ul li{
+    color: rgb(69, 66, 66);
+    font-size: 18px;
+}
+
+
+
