@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background: linear-gradient(45deg,#cdb4db,#ffc8dd,#ffafcc);
+    background-size: contain;
+    height: 100vh;
+    width: 100vw;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top:0;
+    background-color: rgb(103, 9, 103);
+    height: 70px;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+
+}
+.nav-logo{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    cursor:pointer;
+    padding: 0 1rem;
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding: 0.4rem 1rem;
+    gap: 6rem;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+.nav-list li a:hover{
+    color: purple;
+    background-color: #cdb4db;
+    border: 2px solid white;
+    border-radius: 10px;
+
+}
+.nav-list .link ul{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    height: 120px;
+    width: 120px;
+    background-color: purple;
+    
+}
+.nav-list .link ul li{
+    color: white;
+    list-style: none;
+    width: 100%;
+    border-top: 1px solid white;
+    padding: 5px;
+}
+.nav-menu{
+    background-color: rgb(103, 9, 103);
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: white;
+    transition: all 0.3 s ease-in-out;
+}
+
+/*Responsive design*/
+@media (max-width:880px){
+
+    .nav-list{
+        opacity: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.7rem;
+        position: absolute;
+        height: 100vh;
+        width: 250px;
+        top: 0;
+        right: 0;
+        padding: 5rem 1.5rem;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+        background-color:purple;
+        
+    }
+
+    .nav-list.active{
+        display: flex;
+        opacity: 1;
+    }
+    .nav-menu{
+        display: block;
+        z-index: 999;
+        opacity: 1;
+        background-color: purple;
+    }
+
+    .nav-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .nav-menu.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .nav-menu.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
