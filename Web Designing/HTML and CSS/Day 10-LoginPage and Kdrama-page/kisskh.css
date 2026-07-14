@@ -1,3 +1,7 @@
+html {
+    font-size: 16px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,13 +15,15 @@ body {
     padding-bottom: 60px;
 }
 
-#navbar {
+#navbar,
+.nav-list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    gap: 5px;
     background-color: rgb(45, 44, 44);
-    height: 80px;
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 
 #logo {
@@ -28,9 +34,9 @@ body {
 }
 
 .nav {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.25rem;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -41,6 +47,7 @@ body {
 
 .main {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #left {
@@ -48,10 +55,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 #right {
     flex: 1;
+    flex-shrink: 0;
 }
 
 video {
@@ -73,12 +82,13 @@ p {
 
 #icons {
     display: flex;
-    height: 70px;
+    flex-wrap: wrap;
+    height: auto;
     width: 100%;
     justify-content: space-evenly;
 }
 
-.icon-box{
+.icon-box {
     padding: 20px;
     display: flex;
     align-items: center;
@@ -88,16 +98,19 @@ p {
     border-radius: 10px;
 }
 
-.icon-box:hover{
+.icon-box:hover {
     color: orangered;
 }
-.icon-box p{
+
+.icon-box p {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 10px;
 }
+
 .episodes-row {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -106,10 +119,8 @@ p {
 #description {
     background-color: rgb(67, 64, 64);
     padding: 20px;
-    margin: 15px;
+    margin: 15px auto;
     border-radius: 5px;
-    position: relative;
-    left: 30px;
     width: 90%;
 }
 
@@ -118,22 +129,24 @@ p {
     padding: 20px;
     line-height: 1;
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     align-items: center;
     justify-content: space-between;
 }
 
-button {
+#info-btn {
     background-color: orangered;
     color: white;
     font-family: sans-serif;
     padding: 10px;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: bold;
     cursor: pointer;
 }
 
-button:hover{
+#info-btn:hover {
     box-shadow: rgba(236, 94, 38, 0.65) 0px 5px 15px;
     transform: scale(1.1);
 }
@@ -158,8 +171,121 @@ footer {
     bottom: 0px;
     width: 100%;
     text-align: center;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: bold;
     background-color: rgb(45, 44, 44);
     padding: 10px;
+}
+
+@media (380px <=width <=700px) {
+    html {
+        font-size: 14px;
+    }
+
+    #logo {
+        width: 110px;
+        height: 30px;
+    }
+
+    .episodes {
+        width: 55px;
+        padding: 8px;
+        margin: 5px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:380px) {
+    html {
+        font-size: 12px;
+    }
+
+    #logo {
+        width: 110px;
+        height: 30px;
+    }
+
+    .episodes {
+        width: 55px;
+        padding: 8px;
+        margin: 5px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+}
+
+.nav-menu {
+    background-color: rgb(236, 221, 236);
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: rgb(15, 14, 14);
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width:880px) {
+
+    .nav-list {
+        opacity: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.7rem;
+        position: absolute;
+        height: 100vh;
+        width: 250px;
+        top: 0;
+        right: 0;
+        padding: 5rem 1.5rem;
+        box-shadow: 0 10px 10px rgba(252, 246, 246, 0.5);
+        background-color: black;
+    }
+
+    .nav-list.active {
+        display: flex;
+        opacity: 1;
+    }
+
+    .nav-menu {
+        display: block;
+        z-index: 99999;
+        opacity: 1;
+        background-color: rgb(235, 224, 224);
+    }
+
+    .nav-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-menu.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .nav-menu.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #navbar {
+        min-height: 60px;
+    }
+
+    #logo {
+        position: absolute;
+        top: 0px;
+        left: 10px;
+    }
 }
