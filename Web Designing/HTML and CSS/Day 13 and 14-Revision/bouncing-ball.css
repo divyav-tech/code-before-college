@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: clamp(0.5px, 2.2vw, 1px);;
+}
+.container{
+    height: 80vh;
+    max-width: 80vw;
+    background-color: rgb(113, 229, 229);
+    margin: 50em auto;
+    border: 4px dotted blue;
+    overflow: hidden;
+}
+.ball{
+    background: linear-gradient(150deg , blue , rgb(6, 7, 75));
+    height: 70em;
+    width: 70em;
+    border-radius: 50%;
+    position: relative;
+    top: 500em;
+    left: 10em;
+    animation: animateX 3s linear infinite , 
+    animateY 0.8s ease-out infinite alternate;
+}
+
+ @keyframes animateX {
+    from{
+        left: 100em;
+    }
+    to{
+        left: 1200em;
+    }
+ }
+@keyframes animateY{
+    from{
+        top: 500em;
+    }
+    to{
+        top: 100em;
+    }
+}
+.shadow{
+    background: radial-gradient(rgb(95, 86, 86) , rgb(114, 110, 110));
+    width: 40px;
+    height: 8px;
+    border-radius: 50%;
+    position: relative;
+    top: 480em;
+    left: 10em;
+    animation: shadowX 3s linear infinite ,
+    shadow-scale 1s ease-out infinite alternate;
+}
+@keyframes shadowX {
+    from{
+        left: 100em;
+    }
+    to{
+        left: 1200em;
+    }
+ }
+@keyframes shadow-scale{
+    from{
+        scale: 1;
+    }
+    to{
+        scale: 2;
+    }
+}
