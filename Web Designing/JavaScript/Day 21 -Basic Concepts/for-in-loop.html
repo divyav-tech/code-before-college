@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for...in Loop Example</title>
+</head>
+<body>
+    <h2>Student dewtails using for..in Loop</h2>
+    <script>
+        var student = {
+            name: "Akash",
+            age: 30,
+            course: "Web Designing"
+        };
+
+        for(var key in student){
+            document.write(key+":"+ student[key]+ "<br>");
+        }
+    </script>
+</body>
+</html>

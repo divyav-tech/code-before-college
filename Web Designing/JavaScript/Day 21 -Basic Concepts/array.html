@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <h2>Array in JavaScript:</h2>
+    <script>
+        var colors = ["Red", "Green", 'Blue'];
+        document.write("My favourite Color is: " + colors[1]);//Green
+    </script>
+
+    <h2>Array Examples:</h2>
+    <script>
+        var names =["Shyam", "Rahul" , "Sana"];
+       
+        names.unshift("Sharma");         //Add at beginning
+        names.push("Neha");              //Add at end
+        names.pop();                     //Remove from end
+        names.shift();                   //Remove first
+       
+
+        document.write("Total Names: " + names.length + "<br>");
+
+
+        names.forEach(function(name){
+            document.write(name + "<br>");
+        });
+
+       
+    
+    </script>
+</body>
+
+</html>

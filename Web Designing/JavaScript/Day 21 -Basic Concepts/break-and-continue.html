@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break & Continue Example</title>
+</head>
+
+<body>
+    <script>
+        document.write("<h2>Break & Continue Example -Stop loop at 5 </h2>");
+        for (var i = 1; i <= 10, i++;) {
+            if (i == 5) {
+                document.write("Loop stopped at number " + i + "<br>");
+                break;
+            }
+            document.write(i + "<br>");
+        }                                                                                                                                                  
+    </script>
+    <h3>stopping loop at 20</h3>
+    
+    <script>
+        for (var x = 1; x <= 50; x++) {
+            if (x == 20) {
+                document.write("Loop stopped at" + x + "<br>");
+                break;
+            }
+            document.write(x + "<br>");
+        }
+    </script>
+</body>
+
+</html>
