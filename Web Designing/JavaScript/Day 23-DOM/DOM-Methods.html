@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Methods Practice</title>
+    <link rel="stylesheet" href="DOM-Methods.css">
+</head>
+<body>
+    <h1 id="mainTitle">DOM Methods Practice</h1>
+
+    <h2>getElementsById & InnerHTML</h2>
+    <input type="text" id="username" placeholder="Enter your name">
+    <button onclick="greetUser()">Greet</button>
+    <p id="greeting"></p>
+
+    <h2>getElementByClassName</h2>
+    <p class="info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim non facilis exercitationem a architecto, voluptatum consequuntur veniam! Ea, accusamus. Iusto dolores architecto, autem nemo voluptatum non cum repellendus est minus!
+    </p>
+
+    <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis libero voluptates soluta non delectus blanditiis, architecto illo impedit ea iste eaque voluptatibus exercitationem perspiciatis, maxime consectetur voluptas modi animi fugit!</p>
+    <button onclick="highlightInfo()">Highlight Info</button>
+
+    <h2>querySelector</h2>
+    <p class="status">Initial status</p>
+    <button onclick="updateStatus()">Update Status</button>
+
+    <h2>querySelectorAll</h2>
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+
+    <button onclick="styleBoxes()">Style All Boxes</button>
+
+    <h2>style & value</h2>
+    <input type="text" id="colorInput" placeholder="Enter a color name">
+    <button onclick="changeTitleColor()">Change Title Color</button>
+
+
+    <h2>Event Example</h2>
+    <button onclick="document.body.style.backgroundColor = 'lightgray'">Make Background color Graay</button>
+    <button onclick="document.body.style.backgroundColor='white'">Reset Background</button>
+
+    <script src="dom.js"></script>
+        
+</body>
+</html>
