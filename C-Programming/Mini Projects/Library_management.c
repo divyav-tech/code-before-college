@@ -28,10 +28,14 @@ int main(){
 
         switch(choice){
             case 1:
+            if(count >= 100){
+                printf("Library is full, can't add more books!\n");
+                break;
+            }
             printf("Enter Book Name: ");
-            scanf("%s" , books[count].title);
+            scanf(" %99[^\n]" , books[count].title);
             printf("Enter Author Name: ");
-            scanf("%s" , books[count].author);
+            scanf(" %99[^\n]" , books[count].author);
             books[count].isIssued = 0;
             count ++;
             break;
@@ -49,19 +53,18 @@ int main(){
             }
             break;
 
-            case 3:
+            case 3: {
             char search_title[100];
             int found = 0;
             printf("Book Title: ");
-            scanf("%s" , search_title);
+            scanf(" %99[^\n]" , search_title);
 
             for(int i = 0; i<count ; i++){
                 if(strcmp(books[i].title, search_title) == 0){
                     if(books[i].isIssued == 0){
                         printf("Issuing to you.....\n");
                         books[i].isIssued = 1;
-                    }
-                    if(books[i].isIssued == 1){
+                    } else {
                         printf("Alraedy Issued , can't issue again!!\n");
                     }
                     found = 1;
@@ -71,12 +74,13 @@ int main(){
                     printf("Book Not Found -_-\n");
                 }
             break;
+            }
 
-            case 4: 
+            case 4: {
             char title[100];
             int found = 0;
             printf("Book Title: ");
-            scanf("%s" , title);
+            scanf(" %[^\n]" , title);
 
             for(int i = 0; i<count ; i++){
                 if(strcmp(books[i].title, title) == 0){
@@ -89,6 +93,7 @@ int main(){
                     printf("Book Not Found (This book might be from some other Library!!) -_-\n");
                 }
             break;
+            }
 
             case 5:
             printf("Exiting...........\n");
