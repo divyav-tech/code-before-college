@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+</head>
+<body>
+    <button onclick="changeColor()">Click to change background colour</button>
+    <script>
+        function changeColor(){
+            document.body.style.backgroundColor="lightblue";
+        }
+    </script>
+    <br><br>
+    <!--Task-->
+    <button onclick="nextColor()">Click for other color</button>
+    <br><br>
+    <button onclick="resetColor()">Click to reset color</button>
+    <script>
+        function nextColor(){
+            document.body.style.backgroundColor="pink";
+        }
+        function resetColor(){
+            document.body.style.backgroundColor="white";
+        }
+    </script>
+</body>
+</html>
