@@ -12,14 +12,74 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 0 2px 12px rgba(102, 45, 60, 0.08);
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 2rem;
 }
 
 nav div {
     padding: 1rem;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2.25rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #662d3c;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #9f6772;
+    transition: width 0.25s ease;
+}
+
+.nav-links a:hover {
+    color: #9f6772;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.menubar {
+    display: none;
+    color: #662d3c;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .nav-links {
+        display: none;
+    }
+    .menubar {
+        display: block;
+    }
 }
 
 .logo {
@@ -27,6 +87,11 @@ nav div {
     font-size: 1.5rem;
     font-style: italic;
     font-weight: 800;
+    transition: color 0.25s ease;
+}
+
+.logo:hover {
+    color: #9f6772;
 }
 
 #hero-section {
@@ -67,6 +132,18 @@ button {
     margin-top: 2rem;
     color: #eadada;
     background-color: #9f6772;
+    cursor: pointer;
+    transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background-color: #662d3c;
+    box-shadow: 0 8px 16px rgba(102, 45, 60, 0.25);
+}
+
+button:active {
+    transform: translateY(-1px);
 }
 
 h2 {
@@ -88,12 +165,27 @@ h2 {
     flex-wrap: wrap;
 }
 
+.product-card {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+}
+
 .product-card .product-img {
     height: 27rem;
     width: 20rem;
     background-size: cover;
     border-radius: 10px;
     margin-bottom: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, background-size 0.4s ease;
+}
+
+.product-card:hover .product-img {
+    box-shadow: 0 12px 24px rgba(102, 45, 60, 0.2);
+    background-size: 110%;
 }
 
 .product1 {
@@ -194,11 +286,17 @@ button {
     }
 }
 
+footer {
+    background-color: #fbeef0;
+}
+
 .footer-panel1 {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    padding: 4rem 0rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 4rem 2rem;
 }
 
 footer ul {
@@ -207,6 +305,26 @@ footer ul {
 
 footer ul li {
     color: #662d3c;
+    margin-bottom: 0.6rem;
+}
+
+.footer-heading {
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
+    color: #662d3c;
+}
+
+footer a {
+    color: #662d3c;
+    text-decoration: none;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+    display: inline-block;
+}
+
+footer a:hover {
+    color: #9f6772;
+    padding-left: 4px;
 }
 
 .footer-panel2 {
